@@ -3,6 +3,7 @@
   <head>
     <title>Cadence Studio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <script>
       const ua = navigator.userAgent || navigator.vendor || window.opera;
 
@@ -14,33 +15,67 @@
           "https://apps.apple.com/us/app/cadence-studio-focus-timer/id6756442410";
       }
     </script>
+
     <style>
       body {
-        font-family: sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         text-align: center;
-        padding: 40px;
+        padding: 40px 20px;
+        background: #f8f8f8;
+        color: #222;
       }
-      a {
-        display: block;
-        margin: 10px;
-        padding: 12px;
-        background: #333;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
+
+      .container {
+        max-width: 420px;
+        margin: 0 auto;
+      }
+
+      img.logo {
+        width: 120px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 25px;
+        color: #555;
+      }
+
+      .store-buttons img {
+        width: 200px;
+        max-width: 80%;
+        margin: 10px 0;
+      }
+
+      .store-buttons a {
+        display: inline-block;
       }
     </style>
   </head>
+
   <body>
-    <h1>Cadence Studio</h1>
-    <p>Download the app:</p>
-    <a
-      href="https://apps.apple.com/us/app/cadence-studio-focus-timer/id6756442410"
-      >Download on App Store</a
-    >
-    <a
-      href="https://play.google.com/store/apps/details?id=com.timerapp.reactnative&hl=en_US"
-      >Get it on Google Play</a
-    >
+    <div class="container">
+      <img src="logo.png" alt="Cadence Studio Logo" class="logo" />
+
+      <h1>Cadence Studio</h1>
+      <p>Download the app:</p>
+
+      <div class="store-buttons">
+        <a
+          href="https://apps.apple.com/us/app/cadence-studio-focus-timer/id6756442410"
+        >
+          <img src="appstore-badge.svg" alt="Download on the App Store" />
+        </a>
+
+        <a
+          href="https://play.google.com/store/apps/details?id=com.timerapp.reactnative&hl=en_US"
+        >
+          <img src="googleplay-badge.svg" alt="Get it on Google Play" />
+        </a>
+      </div>
+    </div>
   </body>
 </html>
