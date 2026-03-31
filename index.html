@@ -1,38 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Cadence Studio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script>
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
+  <head>
+    <title>Cadence Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
 
-    if (/android/i.test(ua)) {
-      window.location.href = "YOUR_PLAY_STORE_LINK";
-    } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-      window.location.href = "YOUR_APP_STORE_LINK";
-    }
-  </script>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 40px;
-    }
-    a {
-      display: block;
-      margin: 10px;
-      padding: 12px;
-      background: #333;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Cadence Studio</h1>
-  <p>Download the app:</p>
-  <a href="YOUR_APP_STORE_LINK">Download on App Store</a>
-  <a href="YOUR_PLAY_STORE_LINK">Get it on Google Play</a>
-</body>
+      if (/android/i.test(ua)) {
+        window.location.href =
+          "https://play.google.com/store/apps/details?id=com.timerapp.reactnative&hl=en_US";
+      } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+        window.location.href =
+          "https://apps.apple.com/us/app/cadence-studio-focus-timer/id6756442410";
+      }
+    </script>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        padding: 40px;
+      }
+      a {
+        display: block;
+        margin: 10px;
+        padding: 12px;
+        background: #333;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cadence Studio</h1>
+    <p>Download the app:</p>
+    <a
+      href="https://apps.apple.com/us/app/cadence-studio-focus-timer/id6756442410"
+      >Download on App Store</a
+    >
+    <a
+      href="https://play.google.com/store/apps/details?id=com.timerapp.reactnative&hl=en_US"
+      >Get it on Google Play</a
+    >
+  </body>
 </html>
